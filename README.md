@@ -1,5 +1,5 @@
 # TBD
-**Awesomeness Awaits
+Wanderlust
 
 Sean
 Kathleen
@@ -20,6 +20,6 @@ Angela - API calls/API documentation Back-end
 Jorge - Firebase set-up / pseudo-code app functionality
 Sean - API call/documentation Back-end
 
-**Working Title
+
 
 
