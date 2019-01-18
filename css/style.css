@@ -23,6 +23,14 @@ p {
   color: #26a69a;
 }
 
+.userContent {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  background-color: lightblue;
+  width: 100%;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -72,3 +80,16 @@ h1 {
   font-weight: bold;
   text-shadow: 2px 2px darkslategray;
 }
+
+#map {
+  height: 300px;
+  width: 40%;  
+  background-color: gray;
+  border: 2px solid slategray;
+}
+
+/* html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */

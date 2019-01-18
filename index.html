@@ -93,9 +93,12 @@
     <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
-    <div class="section">
 
+  <div class="container">
+
+
+    <div class="section">
+        
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -125,11 +128,17 @@
     <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
+  <div class="userContent">
+      <h6>Check out the surroundings:</h6>
+      <!--The div element for the map -->
+      <div id="map"></div>
+  </div>
+
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Team Snippet</h5>
+          <h5 class="white-text">Who we are</h5>
           <p class="grey-text text-lighten-4">We are dedicated BootCamp Students making awesome code for Project 1.</p>
 
 
@@ -164,9 +173,14 @@
 
   <!--  Scripts-->
   <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+  
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ 
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpJ1wdKlicEERXn2jdck74DO5NfDJllCc&callback=initMap"
+  async defer></script>
 
 </body>
 
