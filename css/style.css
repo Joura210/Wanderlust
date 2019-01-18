@@ -6,6 +6,10 @@
  * Made By MaterializeCSS.com
  */
 
+#logoImg {
+  width: 20%;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -50,8 +54,21 @@ p {
 }
 .icon-block .material-icons {
   font-size: inherit;
+  color: slategray;
 }
 
 footer.page-footer {
   margin: 0;
+}
+
+#quote {
+  font-size: 60px;
+  color: gold;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+h1 {
+  font-weight: bold;
+  text-shadow: 2px 2px darkslategray;
 }
