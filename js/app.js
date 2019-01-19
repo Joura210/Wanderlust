@@ -133,7 +133,7 @@ $.ajax({
     document.getElementById("flag").innerHTML = countryData.flag;
 
 
-  });
+  };
 // Map Details
 function initMap() {
   // The location of Uluru
