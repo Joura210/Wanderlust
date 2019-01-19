@@ -14,7 +14,6 @@ var data = firebase.database()
 //Initial values
 var userName = "";
 var email = "";
-var city = "";
 var country = "";
 
 
@@ -22,18 +21,15 @@ var country = "";
 $(".form-field").on("keyup", function () {
  var usertemp = $("#user-name").val().trim();
  var emailtemp = $("#email").val().trim();
- var citytemp = $("#city").val().trim();
  var countrytemp = $("#country").val().trim();
 
  sessionStorage.setItem("user", usertemp);
  sessionStorage.setItem("email", emailtemp);
- sessionStorage.setItem("city", citytemp);
  sessionStorage.setItem("country", countrytemp);
 });
 //Takes item added to database once submit is clicked
 $("#user-name").val(sessionStorage.getItem("user"));
 $("#email").val(sessionStorage.getItem("email"));
-$("#city").val(sessionStorage.getItem("city"));
 $("#country").val(sessionStorage.getItem("country"));
 
 $("#submit").on("click", function (event) {
@@ -41,7 +37,6 @@ $("#submit").on("click", function (event) {
  //If input values are missing a alert will notify user to fill in all details
  if ($("#user-name").val().trim() === "" ||
    $("#email").val().trim() === "" ||
-   $("#city").val().trim() === "" ||
    $("#country").val().trim() === "") {
 
    alert("Please fill in all details to add new user");
@@ -50,7 +45,6 @@ $("#submit").on("click", function (event) {
    //If input values are complete
    userName = $("#user-name").val().trim();
    email = $("#email").val().trim();
-   city = $("#city").val().trim();
    country = $("#country").val().trim();
 
    $(".form-field").val("");
@@ -58,7 +52,6 @@ $("#submit").on("click", function (event) {
    database.ref().push({
      userName: userName,
      email: email,
-     city: city,
      country: country,
      dateAdded: firebase.database.ServerValue.TIMESTAMP
    });
@@ -73,7 +66,7 @@ $("#submit").on("click", function (event) {
 var APIKey = "6f659bddea416b7a78307f68b0c08fef";
 // Here we are building the URL we need to query the database
 
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + "London" + "&appid=" + APIKey;
 
 // Here we run our AJAX call to the OpenWeatherMap API
 $.ajax({
