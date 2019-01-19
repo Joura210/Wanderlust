@@ -44,17 +44,10 @@ $.ajax({
    console.log("Temperature (F): " + response.main.temp);
  });
 
- $("#country").on("click", function() {
-   $.ajax({
-     url: "https://restcountries.eu/rest/v2/all?api_key=6f659bddea416b7a78307f68b0c08fef",
-     method: "GET"
-   })
-
-  });
-
   var countriesList = document.getElementById("countries");
   var countries; 
 
+  //Ajax call for RESTCountries API
   $.ajax({
     url: "https://restcountries.eu/rest/v2/all?api_key=6f659bddea416b7a78307f68b0c08fef",
     method: "GET"
@@ -71,7 +64,7 @@ $.ajax({
         options += `<option value="${countries[i].alpha3Code}">${countries[i].name}</option>`
     }
     countriesList.innerHTML = options;
-    displayCountryInfo("ZWE");
+    displayCountryInfo("AFG");
   })
 
   function displayCountryInfo(countryByAlpha3Code) {
@@ -84,6 +77,7 @@ $.ajax({
 
 
   };
+  
 // Map Details
 function initMap() {
   // The location of Uluru
