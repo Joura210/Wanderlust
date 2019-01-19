@@ -101,6 +101,46 @@ $.ajax({
    console.log("Temperature (F): " + response.main.temp);
  });
 
+ $("#country").on("click", function() {
+   $.ajax({
+     url: "https://restcountries.eu/rest/v2/all?api_key=6f659bddea416b7a78307f68b0c08fef",
+     method: "GET"
+   })
+
+  });
+
+  var countriesList = document.getElementById("countries");
+  var countries; 
+
+  $.ajax({
+    url: "https://restcountries.eu/rest/v2/all?api_key=6f659bddea416b7a78307f68b0c08fef",
+    method: "GET"
+  })
+  .then(function(data) {
+    console.log(data);
+
+    countries = data;
+      //console.log(countries);
+      //console.log("Capital of " + countries[0].name + " is " + countries[0].capital);
+      //console.log(`The capital of ${countries[0].name} is ${countries[0].capital}`)
+    var options = "";
+    for (var i = 0; i < countries.length; i++) {
+        options += `<option value="${countries[i].alpha3Code}">${countries[i].name}</option>`
+    }
+    countriesList.innerHTML = options;
+    displayCountryInfo("ZWE");
+  })
+
+  function displayCountryInfo(countryByAlpha3Code) {
+    var countryData = countries.find(country => country.alpha3Code === countryByAlpha3Code);
+    //console.log(countryData);
+    document.getElementById("language").innerHTML = countryData.languages[0].name;
+    document.getElementById("currency").innerHTML = countryData.currencies.filter(c => c.name).map(c => `${c.name}  ${c.symbol}`).join(", ");
+    document.getElementById("capital").innerHTML = countryData.capital;
+    document.getElementById("flag").innerHTML = countryData.flag;
+
+
+  });
 // Map Details
 function initMap() {
   // The location of Uluru
@@ -125,4 +165,3 @@ $("#map-continents").CSSMap({
 // END OF THE CSSMap;
 
 });
-
