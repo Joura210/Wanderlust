@@ -111,3 +111,18 @@ function initMap() {
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 };
+
+// World Map Info //
+
+$(document).ready(function(){
+
+// CSSMap;
+$("#map-continents").CSSMap({
+  "size": 750,
+  "tooltips": "floating-top-center",
+  "responsive": "auto"
+});
+// END OF THE CSSMap;
+
+});
+
