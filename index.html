@@ -4,10 +4,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="originLocation" content="Orlando" />
   <title>Wanderlust | /ˈwändərˌləst/</title>
-
+<!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/cssmap-continents/cssmap-continents.css" media="screen" />
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
@@ -19,12 +22,12 @@
       <ul class=" right
           hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
-        </ul>
+      </ul>
 
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
@@ -53,12 +56,13 @@
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">  
+        <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">map</i></h2>
             <h5 class="center">Maps</h5>
 
-            <p class="light">Explore your desired destinations by reviewing local maps, roads, and the surrounding areas.</p>
+            <p class="light">Explore your desired destinations by reviewing local maps, roads, and the surrounding
+              areas.</p>
           </div>
         </div>
 
@@ -66,7 +70,8 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">wb_sunny</i></h2>
             <h5 class="center">Weather</h5>
-            <p class="light">Understanding the weather is important to enjoy your virtual vacation.  Do you like more sun than rain? Prefer the sand than snow?  Mountains or beaches?  </p>
+            <p class="light">Understanding the weather is important to enjoy your virtual vacation. Do you like more
+              sun than rain? Prefer the sand than snow? Mountains or beaches? </p>
           </div>
         </div>
 
@@ -75,7 +80,8 @@
             <h2 class="center brown-text"><i class="material-icons">language</i></h2>
             <h5 class="center">Learn a Language</h5>
 
-            <p class="light">Impress your friends and family!  Learn new phrases and statements to practice before you take a trip. </p>
+            <p class="light">Impress your friends and family! Learn new phrases and statements to practice before you
+              take a trip. </p>
           </div>
         </div>
       </div>
@@ -93,28 +99,53 @@
     <div class="parallax"><img src="images/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="First Name Here" id="first_name" type="text" class="validate">
+  <!-- User Information -->
+  <div row>
+
+    <div>
+      <form id="userInfo" col="col s5">
+        <h4><strong>Let's get started</strong></h4>
+
+        <div class="input-field">
+          <i class="material-icons prefix">account_circle</i>
+
+          <input placeholder="Your Name" id="first_name" type="text" class="validate">
           <label for="first_name" id="#user-name"></label>
         </div>
-      </div>
-      <div class="row">
-      </div>
-      <div class="row">         
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
+
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
           <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
+          <label for="email">Your Email</label>
         </div>
-      </div>
+
+        <label></label>
+        <select class="browser-default">
+          <option value="" disabled selected>Where do you want to go?</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select> <br>
+
+        <div class="row center">
+          <a class="btn-floating btn-large center cirrus pulse"><i class="material-icons">flight_takeoff</i></a>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
+
+    <div class="col s7" id="map-continents">
+      <ul class="continents">
+        <li class="c1"><a href="#africa">Africa</a></li>
+        <li class="c2"><a href="#asia">Asia</a></li>
+        <li class="c3"><a href="#australia">Australia</a></li>
+        <li class="c4"><a href="#europe">Europe</a></li>
+        <li class="c5"><a href="#north-america">North America</a></li>
+        <li class="c6"><a href="#south-america">South America</a></li>
+      </ul>
+    </div>
+
   </div>
+
         
 
     <!-- Country Selection -->
@@ -128,11 +159,15 @@
     <a class="btn-floating btn-large center cyan pulse"><i class="material-icons">flight_takeoff</i></a>
 </div>
 
+
+
+  <!-- Country Selection -->
+
   <div class="container">
 
 
     <div class="section">
-        
+
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -155,7 +190,8 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light"><strong>Wanderlust:</strong> n. a strong desire for or impulse to wander or travel and explore the world</h5>
+          <h5 class="header col s12 light"><strong>Wanderlust:</strong> n. a strong desire for or impulse to wander or
+            travel and explore the world</h5>
         </div>
       </div>
     </div>
@@ -163,9 +199,23 @@
   </div>
 
   <div class="userContent">
-      <h6>Check out the surroundings:</h6>
-      <!--The div element for the map -->
-      <div id="map"></div>
+    <h6>Check out the surroundings:</h6>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </div>
+
+  <div class="nextSteps">
+
+    <br>
+    <div id="flights">
+      <p></p>
+      <div data-skyscanner-widget="LocationWidget" data-locale="en-US" data-params="colour:cirrus;location:Australia"></div>
+    </div>
+
+    <div id="testimonials">
+      <div class="elfsight-app-fd5b500d-d25a-41a8-9668-772c00cb9756"></div>
+    </div>
+  </div>
   </div>
 
   <footer class="page-footer teal">
@@ -207,14 +257,20 @@
 
   <!--  Scripts-->
   <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/app.js"></script>
+
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpJ1wdKlicEERXn2jdck74DO5NfDJllCc&callback=initMap"
-  async defer></script>
+    async defer></script>
 
 </body>
 

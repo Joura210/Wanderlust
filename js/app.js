@@ -140,4 +140,28 @@ $.ajax({
     document.getElementById("flag").innerHTML = countryData.flag;
 
 
-  }
+  });
+// Map Details
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 3, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+};
+
+// World Map Info //
+
+$(document).ready(function(){
+
+// CSSMap;
+$("#map-continents").CSSMap({
+  "size": 750,
+  "tooltips": "floating-top-center",
+  "responsive": "auto"
+});
+// END OF THE CSSMap;
+
+});
