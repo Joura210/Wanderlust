@@ -35,17 +35,19 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
@@ -60,6 +62,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
   color: slategray;
@@ -83,13 +86,52 @@ h1 {
 
 #map {
   height: 300px;
-  width: 40%;  
+  width: 40%;
   background-color: gray;
   border: 2px solid slategray;
 }
 
-/* html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
+#flights {
+  box-sizing: border-box;
+  max-width: 300px;
+  width: 100%;
+  margin: 30px;
+
+}
+
+.skyscanner-widget {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid slategray;
+  background-color: white;
+
+}
+
+#testimonials {
+  background-color: whitesmoke;
+}
+
+#userInfo {
+  width: 500px;
+  box-sizing: border-box;
+  border: 2px solid turquoise;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  background-image: linear-gradient(turquoise, white);
+}
+
+.input-field {
+  background-color: white;
+  border-radius: 10px;
+}
+
+#map-continents {
+  max-width: 750px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid turquoise;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+}
