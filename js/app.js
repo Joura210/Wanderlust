@@ -11,56 +11,6 @@ firebase.initializeApp(config);
 
 var data = firebase.database()
 
-//Initial values
-var userName = "";
-var email = "";
-var country = "";
-
-
-//Adds user information information to the database
-$(".form-field").on("keyup", function () {
- var usertemp = $("#user-name").val().trim();
- var emailtemp = $("#email").val().trim();
- var countrytemp = $("#country").val().trim();
-
- sessionStorage.setItem("user", usertemp);
- sessionStorage.setItem("email", emailtemp);
- sessionStorage.setItem("country", countrytemp);
-});
-//Takes item added to database once submit is clicked
-$("#user-name").val(sessionStorage.getItem("user"));
-$("#email").val(sessionStorage.getItem("email"));
-$("#country").val(sessionStorage.getItem("country"));
-
-$("#submit").on("click", function (event) {
- event.preventDefault();
- //If input values are missing a alert will notify user to fill in all details
- if ($("#user-name").val().trim() === "" ||
-   $("#email").val().trim() === "" ||
-   $("#country").val().trim() === "") {
-
-   alert("Please fill in all details to add new user");
-
- } else {
-   //If input values are complete
-   userName = $("#user-name").val().trim();
-   email = $("#email").val().trim();
-   country = $("#country").val().trim();
-
-   $(".form-field").val("");
-
-   database.ref().push({
-     userName: userName,
-     email: email,
-     country: country,
-     dateAdded: firebase.database.ServerValue.TIMESTAMP
-   });
-   // Clears the data saved in session storage
-   sessionStorage.clear();
- }
-
-});
-
 
 // This is our API key for OpenWeatherMap
 var APIKey = "6f659bddea416b7a78307f68b0c08fef";
