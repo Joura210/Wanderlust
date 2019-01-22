@@ -32,19 +32,23 @@ $.ajax({
     // Log the resulting object
     console.log(response);
 
-    // Transfer content to html?
-    $(".city").html("<h1>" + response.name + " Weather Details</h1>");
-    $(".wind").text("Wind Speed: " + response.wind.speed);
-    $(".humidity").text("Humidity: " + response.main.humidity);
-    $(".temp").text("Temperature (F) " + response.main.temp);
 
-    // Log the data in the console as well
-    console.log("Wind Speed: " + response.wind.speed);
-    console.log("Humidity: " + response.main.humidity);
-    console.log("Temperature (F): " + response.main.temp);
-  });
+   // Transfer content to html?
+   $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+   $(".wind").text("Wind Speed: " + response.wind.speed);
+   $(".humidity").text("Humidity: " + response.main.humidity);
+   $(".temp").text("Temperature (F) " + response.main.temp);
 
-$("#country").on("click", function () {
+   // Log the data in the console as well
+   console.log("Wind Speed: " + response.wind.speed);
+   console.log("Humidity: " + response.main.humidity);
+   console.log("Temperature (F): " + response.main.temp);
+ });
+
+  var countriesList = document.getElementById("countries");
+  var countries; 
+
+  //Ajax call for RESTCountries API
   $.ajax({
     url: "https://restcountries.eu/rest/v2/all?api_key=6f659bddea416b7a78307f68b0c08fef",
     method: "GET"
@@ -71,7 +75,7 @@ $.ajax({
       options += `<option value="${countries[i].alpha3Code}">${countries[i].name}</option>`
     }
     countriesList.innerHTML = options;
-    displayCountryInfo("ZWE");
+    displayCountryInfo("AFG");
   })
 
 function displayCountryInfo(countryByAlpha3Code) {
@@ -83,7 +87,9 @@ function displayCountryInfo(countryByAlpha3Code) {
   document.getElementById("flag").innerHTML = countryData.flag;
 
 
-};
+
+  };
+  
 // Map Details
 function initMap() {
   // The location of Uluru

@@ -7,7 +7,8 @@
  */
 
 #logoImg {
-  width: 20%;
+  width: 50px;
+  margin-top: 5px;
 }
 
 nav ul a,
@@ -68,8 +69,13 @@ p {
   color: slategray;
 }
 
+.material-icons:hover {
+  color: turquoise;
+}
+
 footer.page-footer {
   margin: 0;
+  text-align: center;
 }
 
 #quote {
@@ -127,8 +133,6 @@ h1 {
 }
 
 #map-continents {
-  max-width: 750px;
-  width: 100%;
   box-sizing: border-box;
   border: 2px solid turquoise;
   border-radius: 10px;
