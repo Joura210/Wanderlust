@@ -1,0 +1,141 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+#logoImg {
+  width: 50px;
+  margin-top: 5px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.userContent {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  background-color: lightblue;
+  width: 100%;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+  color: slategray;
+}
+
+.material-icons:hover {
+  color: turquoise;
+}
+
+footer.page-footer {
+  margin: 0;
+  text-align: center;
+}
+
+#quote {
+  font-size: 60px;
+  color: gold;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+h1 {
+  font-weight: bold;
+  text-shadow: 2px 2px darkslategray;
+}
+
+#map {
+  height: 300px;
+  width: 40%;
+  background-color: gray;
+  border: 2px solid slategray;
+}
+
+#flights {
+  box-sizing: border-box;
+  max-width: 300px;
+  width: 100%;
+  margin: 30px;
+
+}
+
+.skyscanner-widget {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid slategray;
+  background-color: white;
+
+}
+
+#testimonials {
+  background-color: whitesmoke;
+}
+
+#userInfo {
+  width: 500px;
+  box-sizing: border-box;
+  border: 2px solid turquoise;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  background-image: linear-gradient(turquoise, white);
+}
+
+.input-field {
+  background-color: white;
+  border-radius: 10px;
+}
+
+#map-continents {
+  box-sizing: border-box;
+  border: 2px solid turquoise;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+}
