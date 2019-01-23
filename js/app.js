@@ -32,22 +32,17 @@ $("#btn").on("click", function() {
   };
   
   data.ref().push(user);
+  event.preventDefault(); 
+  localStorage.clear();
+ localStorage.setItem("name", userName); 
+
 
   console.log(userName);
   console.log(userEmail);
+
 })
 
-
-
-
-
-
-
-
-
-
-
-
+$("#userNameDisplay").text(" " + localStorage.getItem("name"));
 
 //Ajax call for RESTCountries API
 $.ajax({
@@ -78,12 +73,12 @@ function displayCountryInfo(countryByCapital) {
   document.getElementById("capital").innerHTML = countryData.capital;
 
   //Ajax call for weather
-  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + countryData.capital + "&appid=" + APIKey;
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + countryData.capital + "&units=imperial&appid=" + APIKey;
   $.ajax({
     url: queryURL,
     method: "GET"
   }).then(function(data) {
-    //console.log("Weather", data);
+    console.log("Weather", data);
     var uluru = {lat: data.coord.lat, lng: data.coord.lon};
 // The map, centered at Uluru
     map = new google.maps.Map(
@@ -105,7 +100,7 @@ function displayCountryInfo(countryByCapital) {
 function initMap() {
 console.log("inside the init map");
 // The location of Uluru
-var uluru = {lat: 34.5553, lng: 69.2075};
+var uluru = {lat: 28.521910, lng: 69.2075};
 // The map, centered at Uluru
 map = new google.maps.Map(
     document.getElementById('map'), {zoom: 3, center: uluru});
@@ -127,19 +122,15 @@ $("#map-continents").CSSMap({
 
 });
 
-// var name = "";
-// var email = "";
 
 // $("#submit").on("click", function () {
 //   event.preventDefault(); 
  
 //   name = $("#your_name").val().trim();
 //   email = $("#email").val().trim();
-
-//   sessionStorage.clear();
-
-//   sessionStorage.setItem("name", name);
-//   sessionStorage.setItem("email", email);
+//   localStorage.clear();
+//   localStorage.setItem("name", name);
+//   localStorage.setItem("email", email);
 
   
-// });
+//  });
