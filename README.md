@@ -1,4 +1,4 @@
-# Wanderlust | /ˈwändərˌləst/
+# ![Image of logo](images/favicon.png)Wanderlust | /ˈwändərˌləst/
 
 An app to explore potential destinations and to take a virtual vacation. You can explore current weather, language and view location and flights about your country of interest.
 
@@ -69,7 +69,7 @@ https://joura210.github.io/Wanderlust/
 ## <a name="logo"></a> Logo
 We created our own unique logo using Hatchful.shopify. Hatchful.shopify is a free logo making site, that provides many different style types to make it your own.
 
-![Image of logo](images/lpinterest_profile_image.png)
+![Image of logo](images/pinterest_profile_image.png)
 
 
 ## <a name="screenshots"></a> Screenshots
