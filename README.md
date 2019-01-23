@@ -67,8 +67,9 @@ https://joura210.github.io/Wanderlust/
 </ul>
 
 ## <a name="logo"></a> Logo
-![Image of logo](images/logo.png)
 We created our own unique logo using Hatchful.shopify. Hatchful.shopify is a free logo making site, that provides many different style types to make it your own.
+
+![Image of logo](images/lpinterest_profile_image.png)
 
 
 ## <a name="screenshots"></a> Screenshots
@@ -87,27 +88,28 @@ Images of Wanderlust site
 <li>Firebase</li>
 
 ## <a name="OpenWeatherMapAPI"></a> How to use OpenWeatherMap API
-<ol>Sign up and get an API key (APPID) on your account page. It takes up to 1 hour to activate your API key. We send you a confirmation email as your API key is ready to work.</ol>
-<ol>Start using API for free. Find the complete description of API calls with a list of parameters and examples of responses in API documentation.</ol>
-<ol>Please, use API key in each API call.If you need more features than Free account can give you, look at the options of our monthly subscriptions here. Choose your subscription depending on a number of calls per sec, API availability, service provided, and other features.</ol>
+Website: https://openweathermap.org/
+<li>Sign up and get an API key (APPID) on your account page. It takes up to 1 hour to activate your API key. We send you a confirmation email as your API key is ready to work.</li>
+<li>Start using API for free. Find the complete description of API calls with a list of parameters and examples of responses in API documentation.</li>
+<li>Please, use API key in each API call.If you need more features than Free account can give you, look at the options of our monthly subscriptions here. Choose your subscription depending on a number of calls per sec, API availability, service provided, and other features.</li>
 
 ## <a name="restcountriesapi"></a> How to use Rest Countries API
-
+Website: https://restcountries.eu/
 <p>REST Countries provides a simple API for getting information about the world's nations via REST calls. These calls allow users to retrieve all available countries or to retrieve a given country's currency, capital city, calling code, region, sub-region, ISO 639-1 language, name, or country code.</p>
 
 ## <a name="googlemapsapi></a"> How to use Google Maps API
-
+Website: https://developers.google.com/maps/documentation/
 <li>Go to the Google Cloud Platform Console.</li>
 <li>From the Project drop-down menu, select or create the project for which you want to add an API key.</li>
 <li>From the  Navigation menu, select APIs & Services > Credentials.</li>
 <li>On the Credentials page, click Create credentials > API key.</li> 
-    <ol>The API key created dialog displays your newly created API key.</ol>
+    <ul>The API key created dialog displays your newly created API key.</ul>
 <li>On the dialog, click Restrict Key.</li> 
-    <ol>(For more information, see Restricting an API key.)</ol>
+    <ul>(For more information, see Restricting an API key.)</ul>
 <li>On the API key page, under Key restrictions, set the Application restrictions.</li>
-    <ol>Select HTTP referrers (web sites).</ol>
-    <ol>Add the referrers (follow the instructions).</ol>
-    <ol>Click Save.</ol>
+    <ul>Select HTTP referrers (web sites).</ul>
+    <ul>Add the referrers (follow the instructions).</ul>
+    <ul>Click Save.</ul>
 
 ## <a name="how-to-use-app"></a> How to use app
 <li>To start click "Lets Go" button to take you to the input box.</li>
@@ -120,11 +122,11 @@ Images of Wanderlust site
 ## <a name="form-input-validation"></a> Form input validation
 <li>The app uses form input validation for the user information to check or validate the following:</li>
 
-<ol>The user has entered a value for every field (that is, all fields are required.).</ol>
-<ol>This ensures that there are no empty or null values when the form is submitted.</ol> 
-<ol>If the user tries to add information when there is an empty or null value.</ol>
-<ol>The user enters name, email and selects country.</ol>
-<ol>User information is sent to Firebase for storage.</ol>
+<ul>The user has entered a value for every field (that is, all fields are required.).</ul>
+<ul>This ensures that there are no empty or null values when the form is submitted.</ul> 
+<ul>If the user tries to add information when there is an empty or null value.</ul>
+<ul>The user enters name, email and selects country.</ul>
+<ul>User information is sent to Firebase for storage.</ul>
 
 ## <a name="future-enhancements"></a> Future enhancements
 <li>Email to stay in contact with users, based on user input information.</li>
@@ -132,7 +134,7 @@ Images of Wanderlust site
 <li>Add selection for users to leave a personal review</li>
 
 ## <a name="project-contributers"></a> Project contributers
-<ol>Jorge - Front End: Respository set-up, pseudo-code and app functionality</ol>
+<ol>Jorge - Front End: Respository set-up, Firebase, pseudo-code and app functionality</ol>
 <ol>Kathleen - Front End: Wireframe/Styling HTML</ol>
 <ol>Angela - Back End: API call/documentation, weather, Readme</ol>
 <ol>Sean - API call/documentation, language, nesting API calls</ol>
