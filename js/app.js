@@ -20,7 +20,34 @@ var countries;
 $("#btn").on("click", function() {
   console.log("Country in dropdown", $("#countries").val());
   displayCountryInfo($("#countries").val());
+  var userName = $("#yourName").val();
+  var userEmail = $("#yourEmail").val();
+  $("#userNameDisplay").text(" " + userName);
+
+  var user = {
+
+    name: userName,
+    email: userEmail,
+  
+  };
+  
+  data.ref().push(user);
+
+  console.log(userName);
+  console.log(userEmail);
 })
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Ajax call for RESTCountries API
 $.ajax({
@@ -100,19 +127,19 @@ $("#map-continents").CSSMap({
 
 });
 
-var name = "";
-var email = "";
+// var name = "";
+// var email = "";
 
-$("#submit").on("click", function () {
-  event.preventDefault(); 
+// $("#submit").on("click", function () {
+//   event.preventDefault(); 
  
-  name = $("#your_name").val().trim();
-  email = $("#email").val().trim();
+//   name = $("#your_name").val().trim();
+//   email = $("#email").val().trim();
 
-  sessionStorage.clear();
+//   sessionStorage.clear();
 
-  sessionStorage.setItem("name", name);
-  sessionStorage.setItem("email", email);
+//   sessionStorage.setItem("name", name);
+//   sessionStorage.setItem("email", email);
 
   
-});
+// });
