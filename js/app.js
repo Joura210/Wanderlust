@@ -124,7 +124,12 @@ $("#map-continents").CSSMap({
 "responsive": "auto"
 });
 // END OF THE CSSMap;
-
+var userName = localStorage.getItem("name")
+if(userName !== null){
+  $("#userNameDisplay").text(" " + userName);
+}else{
+  $("#userNameDisplay").text(" " + "Traveler");
+}
 });
 
 // var name = "";
