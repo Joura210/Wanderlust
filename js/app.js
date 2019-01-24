@@ -20,7 +20,29 @@ var countries;
 $("#btn").on("click", function() {
   console.log("Country in dropdown", $("#countries").val());
   displayCountryInfo($("#countries").val());
+  var userName = $("#yourName").val();
+  var userEmail = $("#yourEmail").val();
+  $("#userNameDisplay").text(" " + userName);
+
+  var user = {
+
+    name: userName,
+    email: userEmail,
+  
+  };
+  
+  data.ref().push(user);
+  event.preventDefault(); 
+  localStorage.clear();
+ localStorage.setItem("name", userName); 
+
+
+  console.log(userName);
+  console.log(userEmail);
+
 })
+
+$("#userNameDisplay").text(" " + localStorage.getItem("name"));
 
 //Ajax call for RESTCountries API
 $.ajax({
@@ -78,7 +100,7 @@ function displayCountryInfo(countryByCapital) {
 function initMap() {
 console.log("inside the init map");
 // The location of Uluru
-var uluru = {lat: 34.5553, lng: 69.2075};
+var uluru = {lat: 28.521910, lng: 69.2075};
 // The map, centered at Uluru
 map = new google.maps.Map(
     document.getElementById('map'), {zoom: 3, center: uluru});
@@ -97,22 +119,23 @@ $("#map-continents").CSSMap({
 "responsive": "auto"
 });
 // END OF THE CSSMap;
-
+var userName = localStorage.getItem("name")
+if(userName !== null){
+  $("#userNameDisplay").text(" " + userName);
+}else{
+  $("#userNameDisplay").text(" " + "Traveler");
+}
 });
 
-var name = "";
-var email = "";
 
-$("#submit").on("click", function () {
-  event.preventDefault(); 
+// $("#submit").on("click", function () {
+//   event.preventDefault(); 
  
-  name = $("#your_name").val().trim();
-  email = $("#email").val().trim();
-
-  sessionStorage.clear();
-
-  sessionStorage.setItem("name", name);
-  sessionStorage.setItem("email", email);
+//   name = $("#your_name").val().trim();
+//   email = $("#email").val().trim();
+//   localStorage.clear();
+//   localStorage.setItem("name", name);
+//   localStorage.setItem("email", email);
 
   
-});
+//  });

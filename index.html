@@ -14,6 +14,9 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- Link Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+  
 </head>
 
 <body>
@@ -22,7 +25,11 @@
       <a id="logo-container" href="#" class="brand-logo"><img id="logoImg" src="images/logo.png"></a>
       <ul class=" right
           hide-on-med-and-down">
+        
         <li id="welcome"><a href="#"></a>Hello! Welcome to Wanderlust</li>
+
+          <li id="welcome"><a href="#"></a>Hello<span id="userNameDisplay"></span>! Welcome to Wanderlust</li>
+
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -107,6 +114,7 @@
     <tr>
       <td align-content="center">
         <form id="userInfo">
+
           <h4><strong>Let's get started</strong></h4>
 
           <div class="input-field">
