@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="originLocation" content="Orlando" />
   <title>Wanderlust | /ˈwändərˌləst/</title>
-<!-- Favicon -->
+  <!-- Favicon -->
   <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -25,7 +25,11 @@
       <a id="logo-container" href="#" class="brand-logo"><img id="logoImg" src="images/logo.png"></a>
       <ul class=" right
           hide-on-med-and-down">
+        
+        <li id="welcome"><a href="#"></a>Hello! Welcome to Wanderlust</li>
+
           <li id="welcome"><a href="#"></a>Hello<span id="userNameDisplay"></span>! Welcome to Wanderlust</li>
+
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -106,108 +110,109 @@
 
   <!-- User Information -->
 
-  <table>
+  <table id="userInfoTable">
     <tr>
-      <td>
+      <td align-content="center">
         <form id="userInfo">
-        <h4><strong>Let's get started</strong></h4>
 
-        <div class="input-field">
-          <i class="material-icons prefix">account_circle</i>
+          <h4><strong>Let's get started</strong></h4>
 
-          <input placeholder="Your Name" id="yourName" type="text" class="validate">
-          <label for="your_name"></label>
-        </div>
+          <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
 
-        <div class="input-field">
-          <i class="material-icons prefix">email</i>
-          <input id="yourEmail" type="email" class="validate">
-          <label for="email">Your Email</label>
-        </div>
+            <input placeholder="Your Name" id="your_name" type="text" class="validate">
+            <label for="your_name"></label>
+          </div>
 
-        <label></label>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" class="validate">
+            <label for="email">Your Email</label>
+          </div>
 
-        <select id="countries" class="browser-default">
-          <option value="" disabled selected>Where do you want to go?</option>
-        </select> <br>
+          <span>Where do you want to wander?</span>
+          <select id="countries" class="browser-default">
+            <option value="" disabled selected></option>
+          </select> <br>
 
-        <div class="row center">
-          <a id="btn" class="btn-floating btn-large center cirrus pulse"><i id="submit" class="material-icons">flight_takeoff</i></a>
-        </div>
-      </form>
-    </td>
-    <td>
-    <div id="map-continents"><h5><strong>&nbsp Explore the World</strong></h5>
-      <ul class="continents">
-        <li class="c1"><a href="#africa">Africa</a></li>
-        <li class="c2"><a href="#asia">Asia</a></li>
-        <li class="c3"><a href="#australia">Australia</a></li>
-        <li class="c4"><a href="#europe">Europe</a></li>
-        <li class="c5"><a href="#north-america">North America</a></li>
-        <li class="c6"><a href="#south-america">South America</a></li>
-      </ul>
-    </div>
-  </td>
-
-  </div>
-  </tr>
-</table>
-
-        
-
-    <!-- Country Information -->
-    <div id="language">Language</div>
-    <div id="currency">Currency</div>
-    <div id="capital">Capital City</div>
-    <div id="wind"></div>
-    <div id="temp"></div>
-    <div id="humidity"></div>
-
-
-
-
-  <!-- Country Selection -->
-
-  <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4></h4>
-          <p class="left-align light"></p>
-        </div>
-      </div>
-    </div>
-  </div>
+          <div class="row center">
+            <a href="#userContent" id="btn" class="btn-floating btn-large center cirrus pulse"><i id="submit" class="material-icons">flight_takeoff</i></a>
+          </div>
+        </form>
+      </td>
+    </tr>
+    <p></p>
+    <p></p>
+    <p></p>
+  </table>
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light"><strong>Wanderlust:</strong> n. a strong desire for or impulse to wander or
-            travel and explore the world</h5>
+          <h5 class="header col s12 light"><strong>Wanderlust:</strong> n. a strong desire for or impulse to wander or travel and explore the world
         </div>
       </div>
     </div>
     <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <div class="userContent">
-    <h6>Check out the surroundings:</h6>
-    <!--The div element for the map -->
-    <div id="map"></div>
+  <div id="userContent">
+    <div class="row">
+      <div class="col s12"><h3><strong>Country Overview:</strong></h3></div>
+      <div class="col s1" id="icons">
+          <ul><i class="material-icons">language</i></ul>
+          <ul><i class="material-icons">monetization_on</i></ul>
+          <ul><i class="material-icons">stars</i></ul>
+          <ul><i class="material-icons">wb_sunny</i></ul>
+          <ul><i class="material-icons">slow_motion_video</i></ul>
+          <ul><i class="material-icons">grain</i></ul>
+      </div>
+      <div class="col s2" id="labels">
+        <ul><strong>Official Language:</ul>
+        <ul>Currency:</ul>
+        <ul>Capital City:</ul>
+        <ul>Temperature (F):</ul>
+        <ul>Wind Speed (m/s):</ul>
+        <ul>Humidity (%):</ul>
+      </div>
+      <div class="col s2" id="data">
+          <ul id="language">Language</ul>
+          <ul id="currency">Currency</ul>
+          <ul id="capital">Capital City</ul>
+          <ul id="temp">Temperature</ul>
+          <ul id="wind">Wind</ul>
+          <ul id="humidity">Humidity</ul>
+      </div>
+      <div class="col s7">
+        <div id="map"></div>
+      </div>
+    </div>
   </div>
 
-  <div class="nextSteps">
-    <br>
-    <div id="flights">
-      <p></p>
-      <div data-skyscanner-widget="LocationWidget" data-locale="en-US" data-params="colour:cirrus;location:Australia"></div>
-    </div>
+  <table class="nextSteps">
+    <tr>
+      <td>
+        <div id="flights" data-skyscanner-widget="LocationWidget" data-locale="en-US" data-params="colour:glen"></div>
+      </td>
+      <td id="language">
+        <a href="https://www.duolingo.com/" target="_blank" class="waves-effect light-green btn-small"><i class="material-icons left">chat</i>Learn
+          a new language!</a>
+      </td>
+      <td id="passport">
+        <a href="https://travel.state.gov/content/travel/en/passports/apply-renew-passport/how-to-apply.html" target="_blank"
+          class="waves-effect waves-teal teal btn-small"><i class="material-icons  left">contact_mail</i>Check
+          your Passport!</a>
+      </td>
+      <td id="globalEntry">
+        <a href="https://www.cbp.gov/travel/trusted-traveler-programs/global-entry" target="_blank" class="waves-effect cyan btn-small"><i
+            class="material-icons left">track_changes</i>Apply for Global Entry</a>
+      </td>
+    </tr>
+  </table>
 
-    <div id="testimonials">
-      <div class="elfsight-app-fd5b500d-d25a-41a8-9668-772c00cb9756"></div>
-    </div>
+  <div id="testimonials">
+    <div class="elfsight-app-fd5b500d-d25a-41a8-9668-772c00cb9756"></div>
   </div>
   </div>
 
