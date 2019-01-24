@@ -90,27 +90,12 @@ h1 {
   text-shadow: 2px 2px darkslategray;
 }
 
-#map {
-  height: 300px;
-  width: 40%;
-  background-color: gray;
-  border: 2px solid slategray;
-}
-
-#flights {
-  box-sizing: border-box;
-  max-width: 300px;
-  width: 100%;
-  margin: 30px;
-
-}
-
 .skyscanner-widget {
-  padding: 10px;
+  padding: 30px;
   border-radius: 10px;
   border: 2px solid slategray;
   background-color: white;
-
+  width: 300px;
 }
 
 #testimonials {
@@ -118,12 +103,12 @@ h1 {
 }
 
 #userInfo {
-  width: 500px;
+  width: 700px;
   box-sizing: border-box;
-  border: 2px solid turquoise;
   border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 15px;
   background-image: linear-gradient(turquoise, white);
 }
 
@@ -132,17 +117,66 @@ h1 {
   border-radius: 10px;
 }
 
-#map-continents {
+#welcome {
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#userContent {
   box-sizing: border-box;
   border: 2px solid turquoise;
   border-radius: 10px;
-  margin: 10px;
+  margin: auto;
   padding: 20px;
+  background-image: linear-gradient(rgb(141, 233, 224), white);
+  table-layout: fixed;
 }
 
-#welcome {
+#map {
+  height: 400px;
+  width: 100%;
+  background-color: gray;
+  border: 2px solid slategray;
+}
 
-color:black;
-font-weight: bolder;
-font-size: 20px;
+#flights {
+  box-sizing: border-box;
+  width: 400px;
+  border-radius: 10px;
+}
+
+#language,
+#passport,
+#globalEntry {
+  box-sizing: border-box;
+  width: 300px;
+  border-radius: 5px;
+  border-radius: 10px;
+  align-content: center;
+}
+
+.nextSteps {
+  align-content: center;
+}
+
+label {
+  font-size: 15px;
+  color: black;
+}
+
+#icons {
+  text-align: right;
+  line-height: 28px;
+}
+
+#labels {
+  text-align: left;
+  line-height: 31.5px;
+  font-style: bold;
+}
+
+#data {
+  text-align: left;
+  line-height: 31.5px;
 }

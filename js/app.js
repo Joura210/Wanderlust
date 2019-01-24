@@ -51,12 +51,12 @@ function displayCountryInfo(countryByCapital) {
   document.getElementById("capital").innerHTML = countryData.capital;
 
   //Ajax call for weather
-  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + countryData.capital + "&appid=" + APIKey;
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + countryData.capital + "&units=imperial&appid=" + APIKey;
   $.ajax({
     url: queryURL,
     method: "GET"
   }).then(function(data) {
-    //console.log("Weather", data);
+    console.log("Weather", data);
     var uluru = {lat: data.coord.lat, lng: data.coord.lon};
 // The map, centered at Uluru
     map = new google.maps.Map(
