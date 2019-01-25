@@ -79,7 +79,7 @@ function displayCountryInfo(countryByCapital) {
     method: "GET"
   }).then(function(data) {
     console.log("Weather", data);
-    var uluru = {lat: data.coord.lat, lng: data.coord.lon};
+    var uluru = {lat: countryData.latlng[0], lng: countryData.latlng[0]};
 // The map, centered at Uluru
     map = new google.maps.Map(
     document.getElementById('map'), {zoom: 3, center: uluru});
