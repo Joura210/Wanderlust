@@ -76,7 +76,7 @@ We created our own unique logo using Hatchful.shopify. Hatchful.shopify is a fre
 Images of Wanderlust site
 ![Image of site header](images/readme-min.png)
 ![Image of input info](images/readme2-min.png)
-![Image of results](images/readme3-min.png)
+![Image of results](images/readme3-min(1).png)
 ![Image of reviews](images/readme4-min.png)
 ![Image of reviews](images/readme5-min.png)
 
