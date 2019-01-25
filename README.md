@@ -76,7 +76,7 @@ We created our own unique logo using Hatchful.shopify. Hatchful.shopify is a fre
 Images of Wanderlust site
 ![Image of site header](images/readme-min.png)
 ![Image of input info](images/readme2-min.png)
-![Image of results](images/readme3-min(1).png)
+![Image of results](images/readme3-min.png)
 ![Image of reviews](images/readme4-min.png)
 ![Image of reviews](images/readme5-min.png)
 
@@ -138,7 +138,7 @@ Website: https://developers.google.com/maps/documentation/
 
 ## <a name="future-enhancements"></a> Future enhancements
 <li>Email to stay in contact with users, based on user input information.</li>
-<li>Add lanuage development based on the country.</li>
+<li>Add language development based on the country.</li>
 <li>Add selection for users to leave a personal review</li>
 
 ## <a name="project-contributers"></a> Project contributers
