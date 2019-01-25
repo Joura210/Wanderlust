@@ -29,6 +29,7 @@ $("#btn").on("click", function() {
   };
   
   data.ref().push(user);
+
   localStorage.clear();
   localStorage.setItem("name", userName); 
 
