@@ -74,10 +74,12 @@ We created our own unique logo using Hatchful.shopify. Hatchful.shopify is a fre
 
 ## <a name="screenshots"></a> Screenshots
 Images of Wanderlust site
-![Image of site header](images/readme1.jpg)
-![Image of input info](images/readme2.jpg)
-![Image of results](images/readme3.jpg)
-![Image of reviews](images/readme4.jpg)
+![Image of site header](images/readme-min.png)
+![Image of input info](images/readme2-min.png)
+![Image of results](images/readme3-min.png)
+![Image of reviews](images/readme4-min.png)
+![Image of reviews](images/readme5-min.png)
+
 
 ## <a name="technologies-used"></a> Technologies used to create the app
 <li>HTML5</li>
