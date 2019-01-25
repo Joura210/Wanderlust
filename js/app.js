@@ -32,7 +32,7 @@ $("#btn").on("click", function() {
   };
   
   data.ref().push(user);
-  event.preventDefault(); 
+  // event.preventDefault(); 
   localStorage.clear();
  localStorage.setItem("name", userName); 
 
