@@ -1,6 +1,6 @@
 # ![Image of logo](images/favicon.png)Wanderlust | /ˈwändərˌləst/
 
-An app to explore potential destinations and to take a virtual vacation. You can explore current weather, language and view location and flights about your country of interest.
+An app to explore potential destinations and to take a virtual vacation. You can explore language, currency, current weather, and view location and flights about your country of interest.
 
 ## Table of contents
 
@@ -11,6 +11,7 @@ An app to explore potential destinations and to take a virtual vacation. You can
 * [Logo](#logo)
 * [Screenshots](#screenshots)
 * [Technologies used to create app](#technologies-used)
+* [How to use Firebase API](#firebase)
 * [How to use the OpenWeatherMap API](#OpenWeatherMapAPI)
 * [How to use the restcountries API](#restcountriesapi)
 * [How to use the google maps API](#googlemapsapi)
@@ -20,8 +21,7 @@ An app to explore potential destinations and to take a virtual vacation. You can
 * [Project contributers](#project-contributers)
 
 ## <a name="about-this-project"></a> About this project
-
-This project is a virtual vacation application that incorporates several API calls and features. The app has an input form to local storage for user’s name, email and country selection. After a user submits the form, the app retrieves this information with multiple API's. Rest countries API pulls the country input selected and provides information such as language, currency and capital city. Once this call completes the capital city information is then applied to both the Open Weather Map API and Google Maps API to display current weather and map of the location. Another fun feature links to sky scanner to look up flight information. Also, included are reviews from customers and the option to leave a review yourself.
+This project is a virtual vacation application that incorporates several API calls and features. We are using two forms of persistent data with Firebase and local storage. Firebase is storing the user name and email. Local storage is also storing the user name to personalize the page. In addition, the input box allows the user to select the country to explore. After a user submits the form, the app retrieves this information with multiple API's. Rest countries API pulls the country input selected and provides information such as language, currency and capital city. Once this call completes the capital city information is then applied to both the Open Weather Map API and Google Maps API to display current weather and map of the location. Other fun features include travel links to make your dream a reality. Some other fun features are URL links to sky scanner to look up flight information. Also, included are reviews from customers.
 
 ## <a name="project-requirements"></a> Project requirements
 
@@ -61,9 +61,9 @@ https://joura210.github.io/Wanderlust/
     <ol>materialize.min.js</ol>
 
 <li>User completes input fields name, email and country of choice.</li> 
-<li>Information is submitted to local storage once submit button is clicked.</li> 
-<li>Using AJAX call to the rest countries API to pull information on the country, capital city, currency, language and flag of the country.</li>
-<li>From the results of the rest countries API capital city calls the open weather map API to pull the current weather and google map.</li>
+<li>Information is submitted to Firebase storage once submit button is clicked.</li> 
+<li>Using AJAX calls to the rest countries API the country information is pulled for language, currency and capital city.</li>
+<li>From the results of the rest countries API capital city calls the open weather map API to pull the current weather and google map to pull location.</li>
 </ul>
 
 ## <a name="logo"></a> Logo
@@ -85,7 +85,13 @@ Images of Wanderlust site
 <li>Materialize (https://materializecss.com/)</li>
 <li>Javascript</li>
 <li>JQuery (https://jquery.com/)</li>
-<li>Firebase</li>
+<li>Firebase (https://firebase.google.com/)</li>
+
+## <a name="firebase"></a> How to use Firebase API
+Website: https://firebase.google.com/docs/web/setup/
+To learn about the Firebase API and how to add Firebase to your web app, read the Firebase documentation <a href="https://firebase.google.com/docs/web/setup"></a>.
+
+Because Firebase is a Google product, you will need to use your Google account to access and log into Firebase. If you don't have a Google account, you will need to create one.
 
 ## <a name="OpenWeatherMapAPI"></a> How to use OpenWeatherMap API
 Website: https://openweathermap.org/
