@@ -10,7 +10,6 @@ var config = {
 firebase.initializeApp(config);
 
 var data = firebase.database()
-
 var map;
 var APIKey = "6f659bddea416b7a78307f68b0c08fef";
 var countriesList = document.getElementById("countries");
@@ -25,16 +24,13 @@ $("#btn").on("click", function() {
   $("#userNameDisplay").text(" " + userName);
 
   var user = {
-
     name: userName,
-    email: userEmail,
-  
+    email: userEmail,  
   };
   
   data.ref().push(user);
-  event.preventDefault(); 
   localStorage.clear();
- localStorage.setItem("name", userName); 
+  localStorage.setItem("name", userName); 
 
 
   console.log(userName);
@@ -52,7 +48,7 @@ $.ajax({
 .then(function(data) {
   console.log(data);
   countries = data;
-    //console.log(countries);
+    console.log(countries);
     //console.log("Capital of " + countries[0].name + " is " + countries[0].capital);
     //console.log(`The capital of ${countries[0].name} is ${countries[0].capital}`)
   var options = "";
@@ -112,13 +108,7 @@ var marker = new google.maps.Marker({position: uluru, map: map});
 
 $(document).ready(function(){
 
-// CSSMap;
-$("#map-continents").CSSMap({
-"size": 750,
-"tooltips": "floating-top-center",
-"responsive": "auto"
-});
-// END OF THE CSSMap;
+
 var userName = localStorage.getItem("name")
 if(userName !== null){
   $("#userNameDisplay").text(" " + userName);
@@ -127,15 +117,3 @@ if(userName !== null){
 }
 });
 
-
-// $("#submit").on("click", function () {
-//   event.preventDefault(); 
- 
-//   name = $("#your_name").val().trim();
-//   email = $("#email").val().trim();
-//   localStorage.clear();
-//   localStorage.setItem("name", name);
-//   localStorage.setItem("email", email);
-
-  
-//  });
