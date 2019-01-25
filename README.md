@@ -13,15 +13,15 @@ An app to explore potential destinations and to take a virtual vacation. You can
 * [Technologies used to create app](#technologies-used)
 * [How to use Firebase API](#firebase)
 * [How to use the OpenWeatherMap API](#OpenWeatherMapAPI)
-* [How to use the restcountries API](#restcountriesapi)
-* [How to use the google maps API](#googlemapsapi)
+* [How to use the RESTcountries API](#restcountriesapi)
+* [How to use the Google maps API](#googlemapsapi)
 * [How to use the app](#how-to-use-app)
 * [Form input validation](#form-input-validation)
 * [Future enhancements](#future-enhancements)
 * [Project contributers](#project-contributers)
 
 ## <a name="about-this-project"></a> About this project
-This project is a virtual vacation application that incorporates several API calls and features. We are using two forms of persistent data with Firebase and local storage. Firebase is storing the user name and email. Local storage is also storing the user name to personalize the page. In addition, the input box allows the user to select the country to explore. After a user submits the form, the app retrieves this information with multiple API's. Rest countries API pulls the country input selected and provides information such as language, currency and capital city. Once this call completes the capital city information is then applied to both the Open Weather Map API and Google Maps API to display current weather and map of the location. Other fun features include travel links to make your dream a reality. Some other fun features are URL links to sky scanner to look up flight information. Also, included are reviews from customers.
+This project is a virtual vacation application that incorporates several API calls and features. We are using two forms of persistent data with Firebase and local storage. Firebase is storing the user name and email. Local storage is also storing the user name to personalize the page. In addition, the input box allows the user to select the country to explore. After a user submits the form, the app retrieves this information with multiple APIs. Rest countries API pulls the country input selected and provides information such as language, currency and capital city. Once this call completes the capital city information is then applied to both the Open Weather Map API and Google Maps API to display current weather and map of the location. Other fun features include travel links to make your dream a reality. Some other fun features are URL links to sky scanner to look up flight information. Also, included are reviews from customers.
 
 ## <a name="project-requirements"></a> Project requirements
 
@@ -62,8 +62,8 @@ https://joura210.github.io/Wanderlust/
 
 <li>User completes input fields name, email and country of choice.</li> 
 <li>Information is submitted to Firebase storage once submit button is clicked.</li> 
-<li>Using AJAX calls to the rest countries API the country information is pulled for language, currency and capital city.</li>
-<li>From the results of the rest countries API capital city calls the open weather map API to pull the current weather and google map to pull location.</li>
+<li>Using AJAX calls to the RESTcountries API the country information is pulled for language, currency and capital city.</li>
+<li>From the results of the RESTcountries API capital city calls the open weather map API to pull the current weather and Google map to pull location.</li>
 </ul>
 
 ## <a name="logo"></a> Logo
@@ -101,7 +101,7 @@ Website: https://openweathermap.org/
 <li>Start using API for free. Find the complete description of API calls with a list of parameters and examples of responses in API documentation.</li>
 <li>Please, use API key in each API call.If you need more features than Free account can give you, look at the options of our monthly subscriptions here. Choose your subscription depending on a number of calls per sec, API availability, service provided, and other features.</li>
 
-## <a name="restcountriesapi"></a> How to use Rest Countries API
+## <a name="restcountriesapi"></a> How to use REST Countries API
 Website: https://restcountries.eu/
 <p>REST Countries provides a simple API for getting information about the world's nations via REST calls. These calls allow users to retrieve all available countries or to retrieve a given country's currency, capital city, calling code, region, sub-region, ISO 639-1 language, name, or country code.</p>
 
